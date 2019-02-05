@@ -4,8 +4,6 @@ package core.server;
 import java.io.DataOutputStream;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *
@@ -21,10 +19,9 @@ public abstract class FileReader {
        try{
            source = new FileInputStream(path+file);
            
-           int b, i = 0;
+           int b = 0;
 
            while((b = source.read()) != -1){   // -1 is EOF
-               i++;
                out.write(b);
            }            
        }catch(IOException ex){

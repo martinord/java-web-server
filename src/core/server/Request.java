@@ -1,13 +1,9 @@
 package core.server;
 
 
-import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 /**
  * Class to process a request of HTML in a server
  * @author martinord
@@ -43,7 +39,7 @@ public class Request {
     private void processGet() throws IOException{
         String file = requestLine[1];   // Get the file requested
         okRequest();
-        ReadFile.sendBytes(file, out);
+        FileReader.sendBytes(file, out);
     }
     
     private void processHead(){
