@@ -13,7 +13,7 @@ import java.util.Properties;
 public class OptionReader {
     
     private static String DEFAULT_FILE = "settings.conf";
-    private static String PATH = "server_files/";
+    private static String PATH = "config/";
     private String file;
     private Properties reader;
     
