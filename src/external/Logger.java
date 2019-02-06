@@ -14,7 +14,7 @@ import java.util.Calendar;
  */
 public class Logger {
     
-    private static String DEFAULT_PATH = "server_files/LOG/";
+    private static String DEFAULT_PATH = "log";
     private static String DEFAULT_ERROR = "errors.log";
     private static String DEFAULT_ACCESS = "accesses.log";
     private String PATH;
