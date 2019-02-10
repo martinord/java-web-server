@@ -6,7 +6,7 @@ It is implemented as a multithread server, serving the files using TCP sockers, 
 
 ## Quick Start
 
-Build the project or download the JAR from Releases. To run it: <br>
+Build the project or download the JAR from [Releases](https://github.com/martinord/java-web-server/releases). To run it: <br>
 ```bash
 java -jar JavaWebServer-0.1.jar
 ```
