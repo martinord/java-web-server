@@ -58,8 +58,8 @@ public class Logger {
         if(!(new File(PATH)).exists())
             (new File(PATH)).mkdir();
         
-        this.accfile = new File(PATH+afile);
-        this.errfile = new File(PATH+efile);
+        this.accfile = new File(PATH+"/"+afile);
+        this.errfile = new File(PATH+"/"+efile);
         
         try {
             errfile.createNewFile();
